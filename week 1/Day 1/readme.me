@@ -1,0 +1,193 @@
+# Day 1 - Databricks Training
+
+## Introduction
+This is my Day 1 practice work in Databricks training.  
+In this task, I learned basic DBMS concepts and simple SQL queries using tables like Employee, Department, and Project.
+
+The main goal of this practice is to understand:
+
+- How to create tables
+- How to insert data
+- How to use SQL queries
+- How relationships work using Primary Key and Foreign Key
+- How to retrieve and filter data
+
+---
+
+# Database Used
+Employee Management Database
+
+---
+
+# Tables Created
+
+## 1. Department Table
+This table stores department details.
+
+### Columns:
+- department_id
+- name
+
+---
+
+## 2. Employee Table
+This table stores employee information.
+
+### Columns:
+- emp_id
+- name
+- age
+- salary
+- department_id
+- hire_date
+
+---
+
+## 3. Project Table
+This table stores project details.
+
+### Columns:
+- project_id
+- name
+- department_id
+
+---
+
+# Concepts Learned
+
+## CREATE TABLE
+Learned how to create tables using SQL.
+
+```sql
+CREATE TABLE Department (
+    department_id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL
+);
+```
+
+---
+
+## INSERT INTO
+Learned how to insert records into tables.
+
+```sql
+INSERT INTO Department (department_id, name)
+VALUES (1, 'IT');
+```
+
+---
+
+## SELECT Query
+Used SELECT query to display data from tables.
+
+```sql
+SELECT * FROM Employee;
+```
+
+---
+
+## WHERE Clause
+Used WHERE clause to filter records.
+
+```sql
+SELECT * FROM Employee
+WHERE age > 30;
+```
+
+---
+
+## LIKE Operator
+Learned pattern matching using LIKE.
+
+### Examples:
+- Names starting with J
+- Names ending with e
+- Names containing a
+
+---
+
+## Aggregate Functions
+Learned functions like:
+- SUM()
+- AVG()
+- MIN()
+- MAX()
+- COUNT()
+
+```sql
+SELECT AVG(salary) AS average_salary
+FROM Employee;
+```
+
+---
+
+## GROUP BY
+Used GROUP BY to group records department-wise.
+
+```sql
+SELECT department_id, COUNT(*) AS employee_count
+FROM Employee
+GROUP BY department_id;
+```
+
+---
+
+## HAVING Clause
+Used HAVING clause with GROUP BY.
+
+```sql
+SELECT department_id, AVG(salary)
+FROM Employee
+GROUP BY department_id
+HAVING AVG(salary) > 55000;
+```
+
+---
+
+## ORDER BY
+Learned sorting data using ORDER BY.
+
+```sql
+SELECT * FROM Employee
+ORDER BY salary ASC;
+```
+
+---
+
+## JOIN
+Learned INNER JOIN between Employee and Department tables.
+
+```sql
+SELECT e.*
+FROM Employee e
+JOIN Department d
+ON e.department_id = d.department_id
+WHERE d.name = 'IT';
+```
+
+---
+
+# What I Understood on Day 1
+
+- DBMS stores data in tables
+- SQL is used to manage and query data
+- Primary Key uniquely identifies records
+- Foreign Key connects tables
+- Queries help retrieve useful information from database
+
+---
+
+# Challenges Faced
+
+- Understanding JOIN conditions
+- Remembering SQL syntax
+- Using GROUP BY and HAVING correctly
+
+---
+
+# Conclusion
+
+This Day 1 practice helped me understand the basics of DBMS and SQL queries in Databricks.  
+I learned table creation, inserting data, filtering records, aggregate functions, grouping, sorting, and joins.
+
+This is my first step toward learning databases and data engineering concepts.
