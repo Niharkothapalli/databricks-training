@@ -1,0 +1,124 @@
+SQL Window Functions and CTEs – README
+
+Introduction
+
+This assignment helped me learn advanced SQL concepts like Window Functions and Common Table Expressions (CTEs).
+
+The exercises focused on analytical SQL operations that are commonly used in real-world data analysis and reporting.
+
+Topics covered in this assignment include:
+
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- PARTITION BY
+- LAG()
+- LEAD()
+- NTILE()
+- Running Totals
+- Moving Averages
+- CTEs
+- Recursive CTEs
+
+--------------------------------------------------
+
+Database Used
+
+The dataset represents a retail sales company.
+
+Tables included:
+
+1. Employees
+Contains employee details like salary, department, and hire date.
+
+2. Orders
+Contains customer orders, sales amounts, and employee information.
+
+--------------------------------------------------
+
+Concepts Learned
+
+ROW_NUMBER()
+Used to assign a unique row number to each record.
+
+Example:
+Ranking employees based on salary.
+
+--------------------------------------------------
+
+RANK() and DENSE_RANK()
+Used to rank records based on values.
+
+Learned the difference between:
+- RANK() → skips rank numbers during ties
+- DENSE_RANK() → does not skip ranks
+
+--------------------------------------------------
+
+PARTITION BY
+Used to divide data into groups before applying window functions.
+
+Example:
+Ranking employees within each department.
+
+--------------------------------------------------
+
+Running Totals
+Used to calculate cumulative sales over time.
+
+Example:
+Tracking total sales growth day by day.
+
+--------------------------------------------------
+
+LAG() and LEAD()
+Used to compare current row values with previous or next rows.
+
+Example:
+Comparing order amounts between customers.
+
+--------------------------------------------------
+
+NTILE()
+Used to divide records into equal groups.
+
+Example:
+Dividing employees into salary quartiles.
+
+--------------------------------------------------
+
+CTEs (Common Table Expressions)
+Used to simplify complex SQL queries and improve readability.
+
+Example:
+Calculating total sales per employee using temporary result sets.
+
+--------------------------------------------------
+
+Recursive CTEs
+Used to generate repeated results or hierarchical data.
+
+Example:
+Generating numbers from 1 to 10.
+
+--------------------------------------------------
+
+What I Practiced
+
+- Writing analytical SQL queries
+- Using window functions
+- Ranking and partitioning data
+- Calculating cumulative values
+- Working with recursive queries
+- Improving query readability using CTEs
+- Combining multiple SQL concepts together
+
+--------------------------------------------------
+
+Conclusion
+
+This assignment improved my understanding of advanced SQL concepts and analytical query writing.
+
+I learned how window functions and CTEs are used in real-world reporting, dashboards, and data analysis tasks.
+
+It also helped me improve logical thinking and SQL problem-solving skills.
