@@ -1,0 +1,139 @@
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(100) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    stock_quantity INT NOT NULL
+);
+
+INSERT INTO products (product_id, product_name, category, price, stock_quantity) VALUES
+(101, 'Laptop', 'Electronics', 999.99, 50),
+(102, 'Smartphone', 'Electronics', 499.99, 150),
+(103, 'Tablet', 'Electronics', 299.99, 75),
+(104, 'Headphones', 'Accessories', 79.99, 200),
+(105, 'Smartwatch', 'Accessories', 199.99, 100),
+(106, 'Camera', 'Electronics', 649.99, 30),
+(107, 'Printer', 'Electronics', 129.99, 80),
+(108, 'Speaker', 'Electronics', 89.99, 120),
+(109, 'Mouse', 'Accessories', 25.99, 300),
+(110, 'Keyboard', 'Accessories', 45.99, 150),
+(111, 'Monitor', 'Electronics', 299.99, 60),
+(112, 'Charger', 'Accessories', 19.99, 500),
+(113, 'Webcam', 'Electronics', 89.99, 100),
+(114, 'Router', 'Electronics', 129.99, 75),
+(115, 'Desk Lamp', 'Home', 39.99, 90),
+(116, 'Blender', 'Home', 79.99, 40),
+(117, 'Toaster', 'Home', 29.99, 110),
+(118, 'Microwave', 'Home', 149.99, 50),
+(119, 'Vacuum Cleaner', 'Home', 199.99, 60),
+(120, 'Hair Dryer', 'Beauty', 49.99, 200),
+(121, 'Skincare Set', 'Beauty', 89.99, 120),
+(122, 'Shampoo', 'Beauty', 15.99, 250),
+(123, 'Conditioner', 'Beauty', 15.99, 230),
+(124, 'Makeup Kit', 'Beauty', 59.99, 90),
+(125, 'Treadmill', 'Sports', 499.99, 40),
+(126, 'Exercise Bike', 'Sports', 299.99, 55),
+(127, 'Yoga Mat', 'Sports', 29.99, 150),
+(128, 'Dumbbells', 'Sports', 49.99, 70),
+(129, 'Resistance Bands', 'Sports', 19.99, 200),
+(130, 'Electric Kettle', 'Home', 39.99, 85),
+(131, 'Slow Cooker', 'Home', 79.99, 60),
+(132, 'Air Fryer', 'Home', 129.99, 40),
+(133, 'Blender', 'Home', 89.99, 100),
+(134, 'Coffee Maker', 'Home', 69.99, 120),
+(135, 'Smart Light Bulb', 'Home', 29.99, 200),
+(136, 'Wireless Earbuds', 'Electronics', 149.99, 150),
+(137, 'Smart Plug', 'Electronics', 19.99, 250),
+(138, 'Smart Thermostat', 'Electronics', 199.99, 80),
+(139, 'Electric Toothbrush', 'Beauty', 89.99, 100),
+(140, 'Face Mask', 'Beauty', 25.99, 150),
+(141, 'Essential Oils', 'Beauty', 39.99, 120),
+(142, 'Makeup Brushes', 'Beauty', 34.99, 180),
+(143, 'Hand Cream', 'Beauty', 12.99, 220),
+(144, 'Electric Grill', 'Home', 129.99, 70),
+(145, 'Food Processor', 'Home', 159.99, 50),
+(146, 'Air Purifier', 'Home', 199.99, 40),
+(147, 'Wall Clock', 'Home', 39.99, 100),
+(148, 'Storage Bins', 'Home', 24.99, 200),
+(149, 'Camping Tent', 'Sports', 149.99, 40),
+(150, 'Portable Grill', 'Sports', 79.99, 60),
+(151, 'Camping Chair', 'Sports', 39.99, 100),
+(152, 'Hydration Pack', 'Sports', 29.99, 150),
+(153, 'Sleeping Bag', 'Sports', 59.99, 80),
+(154, 'Digital Scale', 'Home', 39.99, 90),
+(155, 'Electric Fan', 'Home', 49.99, 100),
+(156, 'Humidifier', 'Home', 59.99, 70),
+(157, 'Heater', 'Home', 99.99, 60),
+(158, 'Dehumidifier', 'Home', 149.99, 40),
+(159, 'Bike Helmet', 'Sports', 59.99, 150),
+(160, 'Running Shoes', 'Sports', 99.99, 200),
+(161, 'Skateboard', 'Sports', 79.99, 90),
+(162, 'Soccer Ball', 'Sports', 19.99, 250),
+(163, 'Baseball Glove', 'Sports', 29.99, 150),
+(164, 'Wireless Charger', 'Electronics', 39.99, 200),
+(165, 'Portable Battery', 'Sports', 29.99, 150),
+(166, 'Smartwatch Band', 'Accessories', 19.99, 250),
+(167, 'Phone Case', 'Accessories', 15.99, 300),
+(168, 'Laptop Sleeve', 'Accessories', 29.99, 100),
+(169, 'USB Hub', 'Electronics', 24.99, 200),
+(170, 'External Hard Drive', 'Electronics', 119.99, 70),
+(171, 'Tablet Stand', 'Electronics', 34.99, 150),
+(172, 'Mouse Pad', 'Accessories', 14.99, 300),
+(173, 'Desk Organizer', 'Home', 39.99, 90),
+(174, 'Wall Art', 'Home', 49.99, 60),
+(175, 'Rug', 'Home', 99.99, 50),
+(176, 'Throw Pillow', 'Home', 24.99, 150),
+(177, 'Table Lamp', 'Home', 39.99, 100),
+(178, 'Wireless Speaker', 'Electronics', 89.99, 120),
+(179, 'Action Camera', 'Electronics', 249.99, 50),
+(180, 'Smart Home Hub', 'Electronics', 129.99, 75),
+(181, 'Car Charger', 'Accessories', 19.99, 250),
+(182, 'Pet Camera', 'Electronics', 149.99, 40),
+(183, 'Portable Cooler', 'Sports', 49.99, 90),
+(184, 'Beach Towel', 'Sports', 24.99, 100),
+(185, 'Ski Gloves', 'Sports', 39.99, 80),
+(186, 'Hiking Boots', 'Sports', 89.99, 70),
+(187, 'Jump Rope', 'Sports', 15.99, 200),
+(188, 'Travel Mug', 'Home', 29.99, 150),
+(189, 'Lunch Box', 'Home', 19.99, 200),
+(190, 'Vacuum Sealer', 'Home', 79.99, 60),
+(191, 'Clothes Steamer', 'Home', 49.99, 100),
+(192, 'Mini Fridge', 'Home', 149.99, 40),
+(193, 'Portable Fan', 'Home', 24.99, 150);
+
+
+-- Grouping by a single column
+SELECT category
+FROM products
+GROUP BY category;
+
+-- Grouping by multiple columns
+SELECT category, product_name
+FROM products
+GROUP BY category, product_name;
+
+-- 1. Sum of price by category
+SELECT
+    category,
+    SUM(price) AS total_price
+FROM products
+GROUP BY category; -- Output 1
+
+-- 2. Sum of price with alias
+SELECT
+    category,
+    SUM(price) AS "Total price of category"
+FROM products
+GROUP BY category; -- Output 2
+
+-- 3. Multiple Aggregations
+SELECT
+    category,
+    SUM(price) AS "Total price",
+    AVG(price) AS "Avg price",
+    COUNT(*) AS "Category count",
+    MIN(price) AS "Min price",
+    MAX(price) AS "Max price",
+    COUNT(DISTINCT price) AS "Distinct count"
+FROM products
+GROUP BY category; -- Output 3
