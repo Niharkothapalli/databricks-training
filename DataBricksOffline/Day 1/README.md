@@ -169,8 +169,11 @@ Passionate about Java, SQL, Full Stack Development, and Generative AI.
 ---
 
 ## DataBricks Offlie class
+
 Day - 01
 Date : 13/07/2026 - Monday
+
+---
 
 ## License
 
