@@ -1,0 +1,61 @@
+Reflection Questions :
+
+- Why do we convert continuous values into categories?
+- What is the difference between business segmentation and technical bucketing?
+- When would fixed thresholds fail?
+- How does quantile-based segmentation differ from fixed rules?
+- Which method would you use in real-world projects?
+
+
+
+Answers :
+
+1. Why do we convert continuous values into categories?
+
+We convert continuous values into categories to make the data easier to understand and 
+analyze. Instead of looking at many different values, we can group them into categories 
+like Gold, Silver, and Bronze. This helps businesses identify customer groups and make 
+better decisions.
+
+
+
+
+2. What is the difference between business segmentation and technical bucketing?
+
+-Business segmentation uses fixed business rules to group customers, such as 
+ Gold, Silver, and Bronze. 
+-Technical bucketing groups data using mathematical or statistical methods instead of 
+fixed business rules.
+
+Business segmentation is mainly used for business decisions, while technical bucketing 
+is often used in data analysis and machine learning.
+
+
+
+
+3. When would fixed thresholds fail?
+
+Fixed thresholds may fail when customer spending patterns change over time. For example, 
+if most customers start spending more money, the old limits may no longer divide customers
+fairly. In such cases, the business should update the thresholds or use another segmentation
+method.
+
+
+
+
+4. How does quantile-based segmentation differ from fixed rules?
+
+Fixed rules always use the same spending limits to create customer groups. Quantile-based 
+segmentation divides customers based on the actual distribution of the data, so each group 
+has a similar number of customers. This makes quantile segmentation more flexible when the
+data changes.
+
+
+
+
+5. Which method would you use in real-world projects?
+
+I would use Conditional Logic in most real-world projects because it is simple, easy to 
+understand, and easy to implement. It follows business rules and clearly classifies customers
+into groups like Gold, Silver, and Bronze. This makes it useful for customer segmentation,
+business reports, loyalty programs, and marketing campaigns..
