@@ -1,0 +1,52 @@
+Reflection Questions – Answers :
+
+
+1. Why is cleaning done before joining tables?
+
+Cleaning is done before joining tables to remove incorrect, duplicate, and missing data. 
+This helps produce accurate and reliable results after the join.
+
+
+
+2. What would go wrong if null keys are not removed?
+
+If null keys are not removed, some records will not match during the join. This can lead
+to missing data, incorrect results, and incomplete reports.
+
+
+
+3. How did you decide the join order?
+
+I first joined the Orders table with the Customers table using the `customer_id` column. 
+This allowed me to combine customer information with order details and perform the 
+required analysis.
+
+
+
+4. Which step was most difficult and why?
+
+The final reporting table was the most difficult step because it required multiple joins and
+aggregations. Combining all the required information into one DataFrame needed careful planning.
+
+
+
+5. How is SQL logic similar to PySpark?
+
+PySpark follows the same logic as SQL. Operations like SELECT, WHERE, GROUP BY, JOIN, and 
+ORDER BY are available in PySpark through DataFrame functions.
+
+
+
+6. What challenges will appear with large data?
+
+Large datasets take more processing time and memory. They may also require optimization 
+techniques such as partitioning and caching to improve performance.
+
+
+
+7. Can you explain your pipeline in simple steps?
+
+First, I loaded the customer and order datasets. Then I cleaned the data by removing invalid
+records. After that, I joined the datasets, calculated business insights like daily sales 
+and customer spending, segmented customers based on their total spend, created the final 
+reporting table, and finally saved the output as a CSV file.
