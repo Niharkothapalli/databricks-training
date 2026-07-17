@@ -133,17 +133,6 @@ After completing these queries, you will understand how to:
 
 ---
 
-## Project Structure
-
-```
-SQL-Practice/
-│
-├── sql_practice.sql
-└── README.md
-```
-
----
-
 ## Skills Practiced
 
 - SQL Basics
@@ -170,8 +159,8 @@ Passionate about Java, SQL, Full Stack Development, and Generative AI.
 
 ## DataBricks Offlie class
 
-Day - 01
-Date : 13/07/2026 - Monday
+Day - 01 and 02
+Date : 13/07/2026 (Mon) - 14/07/2026 (Tue)
 
 ---
 
