@@ -1,4 +1,4 @@
-# SQL Practice Queries
+# Databricks Training – Assignment 1
 
 
 ## Overview
