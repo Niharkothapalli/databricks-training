@@ -24,7 +24,7 @@ The assignment focuses on implementing different types of SQL joins and set oper
 - Databricks Community Edition
 - Apache Spark SQL
 - SQL
-- Delta Tables (Databricks)
+- Delta Tables (Data bricks)
 
 ---
 
