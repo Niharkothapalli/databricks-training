@@ -1,4 +1,4 @@
-# SQL Practice Queries
+# Assignment 1 – SQL Fundamentals
 
 
 ## Overview
