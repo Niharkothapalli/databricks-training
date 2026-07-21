@@ -1,4 +1,4 @@
-# Databricks Training – Assignment 2
+# Assignment 2 – Intermediate & Advanced SQL
 
 ## Overview
 
