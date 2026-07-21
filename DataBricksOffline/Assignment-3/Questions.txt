@@ -1,0 +1,237 @@
+1. Create Employee DataFrame
+
+
+employee_data = [
+    (101, "Alice", 25, "HR", 45000, "Chennai", "2022-01-15", 201),
+    (102, "Bob", 30, "IT", 70000, "Bangalore", "2021-06-20", 202),
+    (103, "Charlie", None, "IT", None, "Chennai", "2023-03-12", 202),
+    (104, "David", 28, "Finance", 65000, "Mumbai", "2020-09-18", 203),
+    (105, "Eva", 35, "HR", 80000, None, "2019-05-25", 201),
+    (106, "Frank", 29, "Marketing", 55000, "Hyderabad", None, 204),
+    (107, "Grace", 31, "Finance", None, "Pune", "2022-12-01", 203),
+    (108, "Henry", 26, "IT", 60000, "Bangalore", "2024-01-10", None)
+]
+
+employee_columns = [
+    "emp_id",
+    "name",
+    "age",
+    "department",
+    "salary",
+    "city",
+    "joining_date",
+    "manager_id"
+]
+
+employee_df = spark.createDataFrame(employee_data, employee_columns)
+
+employee_df.show()
+employee_df.printSchema()
+
+2. Create Department DataFrame
+
+department_data = [
+    ("HR", "Chennai"),
+    ("IT", "Bangalore"),
+    ("Finance", "Mumbai"),
+    ("Marketing", "Hyderabad"),
+    ("Sales", "Delhi")
+]
+
+department_columns = [
+    "dept_name",
+    "location"
+]
+
+department_df = spark.createDataFrame(department_data, department_columns)
+
+department_df.show()
+department_df.printSchema()
+
+3. Create Manager DataFrame
+
+
+manager_data = [
+    (201, "Robert"),
+    (202, "Jennifer"),
+    (203, "Michael"),
+    (204, "Sophia")
+]
+
+manager_columns = [
+    "manager_id",
+    "manager_name"
+]
+
+manager_df = spark.createDataFrame(manager_data, manager_columns)
+
+manager_df.show()
+manager_df.printSchema()
+
+4. Additional Employee DataFrame (For Union Questions)
+
+
+new_employee_data = [
+    (109, "Irene", 27, "HR", 52000, "Chennai", "2024-03-11", 201),
+    (110, "Jack", 34, "Sales", 72000, "Delhi", "2021-11-20", 205)
+]
+
+new_employee_df = spark.createDataFrame(
+    new_employee_data,
+    employee_columns
+)
+
+new_employee_df.show()
+
+
+
+Part A – DataFrame Creation
+1.	Create the Employee DataFrame using a list of tuples.
+2.	Create the Department DataFrame.
+3.	Create the Manager DataFrame.
+4.	Display the schema of all DataFrames.
+5.	Display the first 5 rows.
+________________________________________
+Part B – Select Operations
+6.	Select only emp_id, name, and salary.
+7.	Select all employees from the IT department.
+8.	Select employee names and alias the column as Employee_Name.
+9.	Select salary after increasing it by 10%.
+10.	Select employees whose city is Chennai or Bangalore.
+________________________________________
+Part C – withColumn()
+11.	Create a new column called bonus equal to 20% of salary.
+12.	Create a column called annual_salary.
+13.	Create a column called experience_bonus where:
+•	Salary > 70000 → 10000
+•	Salary between 50000 and 70000 → 5000
+•	Otherwise → 2000
+14.	Convert employee names to uppercase.
+15.	Add a column called country with value "India".
+________________________________________
+Part D – withColumnRenamed()
+16.	Rename department to dept.
+17.	Rename salary to monthly_salary.
+18.	Rename multiple columns one by one.
+________________________________________
+Part E – Filter
+19.	Find employees earning more than 60000.
+20.	Find employees older than 30.
+21.	Find HR employees in Chennai.
+22.	Find employees with NULL salary.
+23.	Find employees whose salary is between 50000 and 70000.
+24.	Find employees whose names start with "A".
+25.	Find employees whose city is not NULL.
+________________________________________
+Part F – Sort
+26.	Sort employees by salary ascending.
+27.	Sort employees by salary descending.
+28.	Sort employees by department and salary.
+29.	Sort employees by age descending.
+30.	Display top 3 highest-paid employees.
+________________________________________
+Part G – FillNA and DropNA
+31.	Replace NULL salary with 30000.
+32.	Replace NULL city with "Unknown".
+33.	Replace NULL age with average age.
+34.	Replace multiple NULL columns in one statement.
+35.	Drop rows containing any NULL values.
+36.	Drop rows where salary is NULL.
+37.	Drop rows only if all values are NULL.
+________________________________________
+Part H – Date Functions
+38.	Convert joining_date to DateType.
+39.	Extract joining year.
+40.	Extract joining month.
+41.	Extract joining day.
+42.	Find employees who joined after 2022.
+43.	Calculate years worked.
+44.	Find employees who joined this year.
+45.	Display current date.
+46.	Display current timestamp.
+47.	Add 30 days to joining date.
+48.	Find the difference between joining date and today's date.
+________________________________________
+Part I – Joins
+49.	Perform an inner join between Employee and Department.
+50.	Perform a left join.
+51.	Perform a right join.
+52.	Perform a full outer join.
+53.	Join Employee with Manager DataFrame.
+54.	Display employee name along with manager name.
+55.	Find employees whose department location matches their city.
+56.	Find departments having no employees.
+________________________________________
+Part J – Union
+Create another Employee DataFrame:
+emp_id	name	age	department	salary	city	joining_date	manager_id
+109	Irene	27	HR	52000	Chennai	2024-03-11	201
+110	Jack	34	Sales	72000	Delhi	2021-11-20	205
+57.	Union the two DataFrames.
+58.	Count total employees after union.
+59.	Remove duplicate employees after union.
+60.	Union by column names.
+________________________________________
+Part K – Other Transformations
+61.	Display distinct departments.
+62.	Count employees in each department.
+63.	Calculate average salary by department.
+64.	Find maximum salary by department.
+65.	Find minimum salary by department.
+66.	Find total salary paid in each department.
+67.	Count employees in each city.
+68.	Display unique cities.
+69.	Remove duplicate records.
+70.	Drop the manager_id column.
+________________________________________
+Part L – String Functions
+71.	Convert employee names to lowercase.
+72.	Find the length of each employee name.
+73.	Extract the first three letters of employee names.
+74.	Concatenate employee name and city.
+75.	Replace all occurrences of "a" with "@" in names.
+________________________________________
+Part M – Aggregations
+76.	Find total salary.
+77.	Find average salary.
+78.	Find highest-paid employee.
+79.	Find lowest-paid employee.
+80.	Count employees with salary greater than 50000.
+________________________________________
+Part N – Advanced Questions
+81.	Display employees whose salary is above the department average.
+82.	Find the second highest salary.
+83.	Find duplicate cities.
+84.	Display employees who joined in the last two years.
+85.	Replace NULL manager IDs with 999.
+86.	Create a salary grade:
+•	A → Salary ≥ 80000
+•	B → Salary ≥ 60000
+•	C → Salary ≥ 40000
+•	D → Otherwise
+87.	Create an employee ID string like EMP101.
+88.	Find employees whose names end with "e".
+89.	Display employees sorted by joining date.
+90.	Find employees who have worked for more than three years.
+________________________________________
+Challenge Questions
+91.	Rank employees by salary within each department.
+92.	Find the top 2 highest-paid employees in every department.
+93.	Find departments with average salary greater than 60000.
+94.	Find employees who do not have a manager.
+95.	Display employees with manager names and department locations in a single DataFrame.
+96.	Identify employees with missing information (NULL values).
+97.	Replace missing salaries with the department average salary.
+98.	Calculate monthly tax as 10% of salary.
+99.	Find employees who joined on weekends.
+100.	Create a final report containing:
+•	Employee Name
+•	Department
+•	Manager Name
+•	Department Location
+•	Salary
+•	Bonus
+•	Annual Salary
+•	Years Worked
+•	Salary Grade
+

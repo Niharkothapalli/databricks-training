@@ -1,0 +1,54 @@
+from pyspark.sql.functions import *
+
+Current_date()
+===============
+df_curr=df_csv.withColumn("Curr_date",current_date())
+df_curr.display()
+
+
+Date_add()
+=============
+df_after=df_curr.withColumn("WeekAfter",date_add(col("Curr_date"),7))
+df_after.display()
+
+Date_sub()
+==========
+df_curr.withColumn("WeekAfter",date_sub(col("Curr_date"),7)).display()
+
+
+df_before=df_curr.withColumn("WeekBefore",date_sub(col("Curr_date"),7))
+df_before.display()
+
+datediff()
+============
+df_after.withColumn("daysdiff",datediff(col("WeekAfter"),col("Curr_date"))).display()
+
+dropna
+========
+df_csv.dropna("all").display()
+
+df_csv.dropna("any").display()
+
+df_csv.dropna(subset=["Outlet_Size"]).display()
+
+fillna
+==========
+df_csv.fillna('notavailable').display()
+
+df_csv.fillna("Prabhas",subset=["Outlet_Size"]).display()
+
+Split
+======
+df_csv.withColumn("Outlet_Type",split(col("Outlet_Type")," ")).display()
+
+
+Indexing
+==========
+df_csv.withColumn("Outlet_Type",split(col("Outlet_Type")," ")[1]).display()
+
+Explode
+========
+df_exp=df_csv.withColumn("Outlet_Type",split(col("Outlet_Type")," "))
+df_exp.display()
+
+df_exp.withColumn("Outlet_Type",explode(col("Outlet_Type"))).display()
