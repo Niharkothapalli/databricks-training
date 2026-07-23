@@ -339,7 +339,7 @@ Date : 17/07/2026 (Fri) - 18/07/2026 (Sat)
 
 **Nihar Kothapalli**
 
-B.Tech Electronics and Communication Engineering (Minor in Computer Science) at VITb
+B.Tech Electronics and Communication Engineering Student (Minor in Computer Science) at VITb
 
 
 ---
