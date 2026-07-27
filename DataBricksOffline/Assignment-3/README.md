@@ -218,7 +218,7 @@ Implemented:
 Solved advanced problems using Window Functions:
 
 - Rank Employees by Salary
-- Top 2 Salaries per Department
+- Top 2 Salaries per  Department
 - Departments with High Average Salary
 - Employees without Managers
 - Employee + Manager + Department Report
