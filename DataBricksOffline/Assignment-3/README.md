@@ -50,7 +50,7 @@ Used for Union operations.
 # Topics Covered
 
 ## Part A – DataFrame Creation
-- Create Employee DataFrame
+- Create Employee  DataFrame
 - Create Department DataFrame
 - Create Manager DataFrame
 - Display schema
