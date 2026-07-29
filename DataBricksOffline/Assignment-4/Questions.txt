@@ -1,0 +1,240 @@
+Table 1: Departments
+======================
+CREATE TABLE Departments (
+DepartmentID INT PRIMARY KEY,
+DepartmentName VARCHAR(50)
+);
+
+INSERT INTO Departments VALUES
+(101,'IT'),
+(102,'HR'),
+(103,'Finance'),
+(104,'Sales'),
+(105,'Marketing');
+
+Table 2: Employees
+====================
+CREATE TABLE Employees
+(
+EmployeeID INT PRIMARY KEY,
+EmployeeName VARCHAR(50),
+Gender VARCHAR(10),
+DepartmentID INT,
+Salary INT,
+Experience INT,
+ManagerID INT,
+JoiningDate DATE,
+City VARCHAR(50)
+);
+
+INSERT INTO Employees VALUES
+(1,'Rahul','Male',101,70000,5,NULL,'2019-01-10','Hyderabad'),
+(2,'Sneha','Female',101,85000,8,1,'2017-06-15','Bangalore'),
+(3,'John','Male',102,45000,2,2,'2022-03-11','Chennai'),
+(4,'Priya','Female',102,50000,3,2,'2021-05-19','Hyderabad'),
+(5,'Amit','Male',103,90000,10,1,'2015-09-20','Delhi'),
+(6,'Neha','Female',103,90000,9,5,'2016-11-01','Delhi'),
+(7,'Kiran','Male',104,60000,4,5,'2020-02-15','Mumbai'),
+(8,'David','Male',104,62000,4,7,'2020-08-18','Mumbai'),
+(9,'Anjali','Female',105,55000,3,2,'2021-01-25','Pune'),
+(10,'Arjun','Male',101,85000,8,1,'2017-07-10','Bangalore'),
+(11,'Divya','Female',103,70000,6,5,'2018-12-20','Hyderabad'),
+(12,'Vikram','Male',104,62000,5,7,'2019-10-05','Mumbai'),
+(13,'Meena','Female',105,55000,2,9,'2023-01-01','Pune'),
+(14,'Rakesh','Male',101,95000,12,NULL,'2013-04-01','Hyderabad'),
+(15,'Suresh','Male',102,45000,1,4,'2024-01-15','Chennai');
+
+
+SECTION 1 - ROW_NUMBER()
+========================
+Q1
+
+Display employees with row numbers based on highest salary.
+
+Q2
+
+Assign row numbers department-wise based on salary.
+
+Q3
+
+Find the highest-paid employee in each department.
+
+Q4
+
+Find the second highest-paid employee from every department.
+
+Q5
+
+Find the latest joined employee from every department.
+
+Q6
+
+Find the oldest employee in each department.
+
+Q7
+
+Display top 3 highest-paid employees from every department.
+
+Q8
+
+Display employees with row numbers based on joining date.
+
+SECTION 2 - RANK()
+===================
+Q9
+
+Rank employees based on salary.
+
+Q10
+
+Rank employees department-wise.
+
+Q11
+
+Find employees having Rank = 1.
+
+Q12
+
+Find Top 5 salaries using Rank.
+
+Q13
+
+Display employees having Rank less than 3 department-wise.
+
+Q14
+
+Explain the gap created by Rank().
+
+SECTION 3 - DENSE_RANK()
+=========================
+Q15
+
+Assign Dense Rank based on salary.
+
+Q16
+
+Find the second highest salary using Dense Rank.
+
+Q17
+
+Find top 3 salaries department-wise.
+
+Q18
+
+Compare Rank() and Dense Rank().
+
+Q19
+
+Find departments having multiple employees with same salary.
+
+SECTION 4 - LEAD()
+====================
+Q20
+
+Display previous and next employee salary.
+
+Q21
+
+Find salary difference between current employee and next employee.
+
+Q22
+
+Find employees whose next salary is greater.
+
+Q23
+
+Display next joining date.
+
+Q24
+
+Display next employee name.
+
+SECTION 5 - LAG()
+==================
+Q25
+
+Display previous employee salary.
+
+Q26
+
+Find salary increment compared to previous employee.
+
+Q27
+
+Find employees earning more than previous employee.
+
+Q28
+
+Display previous joining date.
+
+Q29
+
+Display previous employee name.
+
+SECTION 6 - SUBQUERIES
+========================
+Q30
+
+Find employees earning more than average salary.
+
+Q31
+
+Find employees earning less than average salary.
+
+Q32
+
+Find highest-paid employee.
+
+Q33
+
+Find second highest salary.
+
+Q34
+
+Find departments having more than three employees.
+
+Q35
+
+Find employees working in the department having maximum employees.
+
+Q36
+
+Find employees earning the same salary as Amit.
+
+Q37
+
+Find employees earning higher than their manager.
+
+SECTION 7 - CTE (Common Table Expressions)
+=============================================
+Q38
+
+Create a CTE to display employees with department names.
+
+Q39
+
+Using a CTE, display top 3 salaries department-wise.
+
+Q40
+
+Using a CTE, find employees earning above average salary.
+
+Q41
+
+Using a CTE, find duplicate salaries.
+
+Q42
+
+Using a CTE, find departments having average salary greater than 70,000.
+
+Q43
+
+Using a CTE, calculate total salary department-wise.
+====================================================
+Q44
+
+Using a CTE, find employees having more than 5 years of experience.
+
+Q45
+
+Using a CTE and ROW_NUMBER(), remove duplicate employee records (assume duplicates exist).
