@@ -1,4 +1,4 @@
-# SQL Assignment 4 – Window Functions, Subqueries & CTEs
+# Assignment 4 – Window Functions, Subqueries & CTEs
 
 ## 📌 Overview
 
