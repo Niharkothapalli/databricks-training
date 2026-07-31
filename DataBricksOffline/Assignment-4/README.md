@@ -175,7 +175,7 @@ After completing this assignment, you will be able to:
 ## 💻 Tools Used
 
 - MySQL 8.0+
-- MySQL Workbench
+- MySQL Workbench.
 
 ---
 
