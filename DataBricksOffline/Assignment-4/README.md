@@ -5,7 +5,7 @@
 This assignment demonstrates advanced SQL concepts using a sample Employee-Department database. It focuses on solving real-world analytical problems using Window Functions, Subqueries, and Common Table Expressions (CTEs).
 
 The database consists of two tables:
-
+ 
 - **Departments**
 - **Employees**
 
