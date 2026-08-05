@@ -78,7 +78,7 @@ A total of **45 SQL queries** are implemented to strengthen understanding of adv
 
 - Next employee salary
 - Salary difference
-- Employees whose next salary is greater
+- Employees whose next salary  is greater
 - Next joining date
 - Next employee name
 
