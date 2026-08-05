@@ -139,7 +139,7 @@ A total of **45 SQL queries** are implemented to strengthen understanding of adv
 
 - Subqueries
   - Scalar Subqueries
-  - Correlated Subqueries
+  - Correlated  Subqueries
 
 - JOIN Operations
 
