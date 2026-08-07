@@ -166,7 +166,7 @@ After completing this assignment, you will be able to:
 - Analyze sequential data using LEAD() and LAG().
 - Write efficient Subqueries.
 - Build reusable queries using CTEs.
-- Solve ranking and analytical SQL interview problems.
+- Solve ranking and  analytical SQL interview problems.
 - Detect and remove duplicate records.
 - Perform department-wise analytics.
 
