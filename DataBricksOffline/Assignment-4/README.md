@@ -183,7 +183,7 @@ After completing this assignment, you will be able to:
 
 **Nihar Kothapalli**
 
-B.Tech Electronics and Communication Engineering Student (Minor in Computer Science) at VITb
+B.Tech Electronics and Communication Engineering  Student (Minor in Computer Science) at VITb
 
 ---
 
