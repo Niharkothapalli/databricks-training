@@ -57,7 +57,7 @@ A total of **45 SQL queries** are implemented to strengthen understanding of adv
 
 - Global salary ranking
 - Department-wise ranking
-- Highest ranked employees
+- Highest ranked  employees
 - Top 5 salaries
 - Top ranks within departments
 - Understanding ranking gaps
