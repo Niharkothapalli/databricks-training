@@ -139,7 +139,7 @@ A total of **45 SQL queries** are implemented to strengthen understanding of adv
 
 - Subqueries
   - Scalar Subqueries
-  - Correlated  Subqueries
+  - Correlated Subqueries
 
 - JOIN Operations
 
@@ -163,7 +163,7 @@ After completing this assignment, you will be able to:
 
 - Use Window Functions effectively.
 - Compare ROW_NUMBER(), RANK(), and DENSE_RANK().
-- Analyze sequential data using LEAD() and LAG().
+- Analyze  sequential data using LEAD() and LAG().
 - Write efficient Subqueries.
 - Build reusable queries using CTEs.
 - Solve ranking and  analytical SQL interview problems.
