@@ -70,7 +70,7 @@ A total of **45 SQL queries** are implemented to strengthen understanding of adv
 - Second highest salary
 - Top 3 salaries by department
 - Difference between RANK()  and DENSE_RANK()
-- Finding duplicate salaries
+- Finding  duplicate salaries
 
 ---
 
