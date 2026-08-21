@@ -100,7 +100,7 @@ A total of **45 SQL queries** are implemented to strengthen understanding of adv
 - Below average salary
 - Highest salary
 - Second highest salary
-- Departments with more than three employees
+- Departments  with more than three employees
 - Department with maximum employees
 - Employees with same salary as Amit
 - Employees earning more than their managers
