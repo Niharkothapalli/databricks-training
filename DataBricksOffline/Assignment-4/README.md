@@ -115,7 +115,7 @@ A total of **45 SQL queries** are implemented to strengthen understanding of adv
 - Duplicate salaries
 - Departments with average salary greater than 70,000
 - Total salary department-wise
-- Employees with more than 5 years of experience
+- Employees with more  than 5 years of experience
 - Removing duplicate employee records using ROW_NUMBER()
 
 ---
