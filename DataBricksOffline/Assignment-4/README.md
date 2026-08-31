@@ -9,7 +9,7 @@ The database consists of two tables:
 - **Departments**
 - **Employees**
 
-A total of **45 SQL queries** are implemented to strengthen understanding of advanced SQL techniques frequently used in interviews and data analytics.
+A total of **45 SQL queries** are implemented to strengthen  understanding of advanced SQL techniques frequently used in interviews and data analytics.
 
 ---
 
