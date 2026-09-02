@@ -113,7 +113,7 @@ A total of **45 SQL queries** are implemented to strengthen  understanding of ad
 - Top 3 salaries department-wise
 - Above average salary
 - Duplicate salaries
-- Departments with  average salary greater than 70,000
+- Departments with  average salary  greater than 70,000
 - Total salary department-wise
 - Employees with more  than 5 years of experience
 - Removing duplicate employee records using ROW_NUMBER()
