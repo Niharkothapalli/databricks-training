@@ -88,7 +88,7 @@ A total of **45 SQL queries** are implemented to strengthen  understanding of ad
 
 - Previous employee salary
 - Salary increment calculation
-- Employees  earning  more than  previous employee
+- Employees  earning  more  than  previous employee
 - Previous  joining date
 - Previous employee name
 
