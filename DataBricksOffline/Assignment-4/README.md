@@ -48,7 +48,7 @@ A total of **45 SQL queries** are implemented to strengthen  understanding of ad
 - Second highest employee
 - Latest joined employee
 - Oldest employee
-- Top 3 employees department-wise
+- Top 3 employees  department-wise
 - Joining order
 
 ---
